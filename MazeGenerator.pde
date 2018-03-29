@@ -12,7 +12,7 @@ Cell current;		// Current cell object.
 final int bgColor = 30;		// Background color.
 int rows;
 int cols;
-int res = 40;	// Resolution.
+int res = 20;	// Resolution.
 
 int curX;    	// Current cell object's X location in array.
 int curY;    	// Current cell object's Y location in array.
