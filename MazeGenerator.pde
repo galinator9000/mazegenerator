@@ -107,9 +107,8 @@ boolean checkNeighbors(){
     }
 
 	// Extra if statements are for checking edges of the window.
-
     availableNeighbors = false;
-    if(curY-1 > 0){
+    if(curY-1 > -1){
         if(!Cells[curX][curY-1].visited){		// Is top neighbor available?
             neighbors[0] = Cells[curX][curY-1];
             availableNeighbors = true;
@@ -127,7 +126,7 @@ boolean checkNeighbors(){
             availableNeighbors = true;
         }
     }
-    if(curX-1 > 0){
+    if(curX-1 > -1){
         if(!Cells[curX-1][curY].visited){		// Is left neighbor available?
             neighbors[3] = Cells[curX-1][curY];
             availableNeighbors = true;
